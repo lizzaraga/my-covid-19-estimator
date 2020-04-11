@@ -6,7 +6,8 @@
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   background-color: #fafafa;
@@ -92,26 +93,36 @@ body main section#section-form form .group-input > label {
   width: 100px;
 }
 
-body main section#section-form form .group-input > input, body main section#section-form form .group-input select {
+body main section#section-form form .group-input > input,
+body main section#section-form form .group-input > select {
   width: 100%;
   margin-left: 10px;
   height: 2.1em;
-  border: 1px solid #ddd;
   padding: 0 10px;
+  outline: none;
+  border: 1.2px solid #ccc;
+  border-radius: 4px;
+}
+
+body main section#section-form form .group-input > input:hover, body main section#section-form form .group-input > input:focus,
+body main section#section-form form .group-input > select:hover,
+body main section#section-form form .group-input > select:focus {
+  border-color: #000;
 }
 
 body main section#section-form form .group-action button {
   padding: 6px 20px;
   margin-left: 85px;
-  border: none;
+  border: 2px solid #eee;
   border-radius: 4px;
-  background: linear-gradient(150deg, #fff, #eee);
+  background: linear-gradient(150deg, #fff, #f0f0f0);
   cursor: pointer;
   -webkit-box-shadow: 0 1px 2px #ccc;
           box-shadow: 0 1px 2px #ccc;
+  outline: none;
 }
 
-body main section#section-form form .group-action button:hover {
-  background: linear-gradient(150deg, #eee, #fff);
+body main section#section-form form .group-action button:focus, body main section#section-form form .group-action button:active {
+  border: 2px solid #000;
 }
 /*# sourceMappingURL=app.css.map */

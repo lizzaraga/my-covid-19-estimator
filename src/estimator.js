@@ -1,3 +1,4 @@
+/* eslint max-len: ["error", { "code": 200 }] */
 const periodNormalizer = ({ periodType, timeToElapse }) => {
   let multiplier;
   switch (periodType) {
@@ -14,7 +15,7 @@ const periodNormalizer = ({ periodType, timeToElapse }) => {
 };
 
 const getHospitalBedsByRequestedTime = (s, t) => parseInt((s * 0.35) - t, 10);
-/* eslint max-len: ["error", { "code": 200 }] */
+
 const getDollarsInFlight = (i, { avgDailyIncomeInUSD, avgDailyIncomePopulation }, d) => parseInt((i * avgDailyIncomePopulation * avgDailyIncomeInUSD) / d, 10);
 
 const covid19ImpactEstimator = (data) => {

@@ -110,7 +110,7 @@ body main section#section-form form .group-input > select:focus {
   border-color: #000;
 }
 
-body main section#section-form form .group-action button {
+body main section#section-form form .group-action input[type="button"] {
   padding: 6px 20px;
   margin-left: 85px;
   border: 2px solid #eee;
@@ -122,7 +122,7 @@ body main section#section-form form .group-action button {
   outline: none;
 }
 
-body main section#section-form form .group-action button:focus, body main section#section-form form .group-action button:active {
+body main section#section-form form .group-action input[type="button"]:focus, body main section#section-form form .group-action input[type="button"]:active {
   border: 2px solid #000;
 }
 /*# sourceMappingURL=app.css.map */

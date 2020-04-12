@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estimator Assessment Frontend form to receive inputs">
+    <link rel="stylesheet" href="./src/css/app.css">
+    <title>Assessment</title>
+</head>
+
+<body>
+    <header>
+        <span>Estimator</span>
+    </header>
+    <main class="match-parent">
+        <section id="section-form">
+            <header>Estimator form</header>
+            <form action="#">
+                <div class="group-input">
+                    <label for="population">Population</label>
+                    <input type="number" name="population" id="population" data-population>
+                </div>
+                <div class="group-input">
+                    <label for="timeToElapse">Time to elapse</label>
+                    <input type="number" name="timeToElapse" id="timeToElapse" data-time-to-elapse>
+                </div>
+                <div class="group-input">
+                    <label for="reportedCases">Reported cases</label>
+                    <input type="number" name="reportedCases" id="reportedCases" data-reported-cases>
+                </div>
+                <div class="group-input">
+                    <label for="totalHospitalBeds">Total hospital beds</label>
+                    <input type="number" name="totalHospitalBeds" id="totalHospitalBeds" data-total-hospital-beds>
+                </div>
+                <div class="group-input">
+                    <label for="periodType">Period type</label>
+                    <select name="periodType" id="periodType" data-period-type>
+                        <option value="days">days</option>
+                        <option value="weeks">weeks</option>
+                        <option value="months">months</option>
+                    </select>
+                </div>
+                <div class="group-action">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
